@@ -26,6 +26,8 @@ class Bronze():
                         .withColumn("load_time", F.current_timestamp()) 
                         .withColumn("source_file", F.input_file_name())
                     )
+        
+        #hello
                         
         # Use append mode because bronze layer is expected to insert only from source
         stream_writer = df_stream.writeStream \
